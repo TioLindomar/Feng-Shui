@@ -325,6 +325,24 @@ tr:hover {
     margin-top: 2rem;
 }
 
+/* SOBRE */
+.sobre {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre li {
+    padding: 1rem;
+}
+
+
+.segredo {
+    color: var(--primary-color);
+}
+
 /* MENSAGEM DE SORTE AO ENTRAR */
 .mensagem {
     display: none; /* Esconde o modal por padrão */
