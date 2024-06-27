@@ -38,12 +38,12 @@ window.addEventListener('load', function() {
             const senha = document.getElementById('senha').value;
 
             resultadoDiv.innerHTML = `
-                <h2>Dados Cadastrados:</h2>
+                <p><strong>Dados Cadastrados:</strong></p>
                 <p><strong>Nome Completo:</strong> ${nomeCompleto}</p>
                 <p><strong>Telefone:</strong> ${telefone}</p>
                 <p><strong>Email:</strong> ${email}</p>
                 <p><strong>Data de Nascimento:</strong> ${dataNascimento}</p>
-                <p><strong>Nome de Usuário:</strong> ${nomeUsuario}</p>
+                <p><strong>Nome de Ganhador:</strong> ${nomeUsuario}</p>
                 <p><strong>Senha:</strong> ${senha}</p>
             `;
         } else {

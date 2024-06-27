@@ -126,7 +126,6 @@ main {
     min-height: 2rem;
     margin: 0 1.5rem;
     fill: var(--primary-color);
-    /* fill: #DE434B; */
 }
 
 .texto-logo {
@@ -211,9 +210,9 @@ tr:hover {
     font-size: 2rem;
     flex-direction: column;
     padding: 2rem;
-    border: 3px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    border: 3px solid #dbc12c;
+    background-color: #3E3B27;
+    color: #dbc12c;
     max-width: 30rem;
     margin: 0 auto;
 }
@@ -221,14 +220,66 @@ tr:hover {
 .formulario label {
     flex-direction: row;
     text-align: center;
+    text-shadow: 1px solid #2c2a1c;
 }
 
 .formulario input {
     height: 2rem;
     width: 95%;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: #dbc12c;
+    color: #2c2a1c;
     margin: 0 auto;
+    padding: 0.5rem;
+    border: 2px solid #2c2a1c;
+    font-family: 'MUSASHI', sans-serif;
+}
+
+.formulario ::placeholder {
+    font-style: italic;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastrar {
+    font-family: 'MUSASHI', sans-serif;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 40%;
+    background-color: #dbc12c;
+}
+
+.cadastrar:hover {
+    background-color: #c7a900;
+    transition: 600ms;
+    cursor: pointer;
+}
+
+.cancelar {
+    font-family: 'MUSASHI', sans-serif;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 40%;
+    background-color: #DE434B;
+}
+
+.cancelar:hover {
+    background-color: #A81613;
+    transition: 600ms;
+    cursor: pointer;
+}
+
+#resultado { /* <---------------- Uso de ID */
+    margin-top: 2rem !important;
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: #3E3B27;
+    padding: 1rem;
+    color: #dbc12c;
+    border: 2px solid #dbc12c;
+    text-shadow: 1px solid #2c2a1c;
 }
 
 
