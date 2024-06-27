@@ -280,7 +280,7 @@ tr:hover {
     cursor: pointer;
 }
 
-#resultado { /* <---------------- Uso de ID */
+#resultado {
     margin-top: 2rem !important;
     max-width: 30rem;
     margin: 0 auto;
