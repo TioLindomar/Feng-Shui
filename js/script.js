@@ -19,6 +19,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Mudar ícone de lua e sol
+
+    function toggleIcone() {
+        var lua = document.getElementById('lua');
+        var sol = document.getElementById('sol');
+
+        if (lua.style.display === "inline") {
+            lua.style.display = "none";
+            sol.style.display = "inline";
+        } else {
+            lua.style.display = "inline"
+            sol.style.display = "none";
+        }
+    }
+    
 
 // Cadastro
 
@@ -82,3 +97,17 @@ window.onclick = function(event) {
         mensagem.style.display = "none";
     }
 };
+
+
+// Jogar
+
+var jogar = document.querySelector('jogar');
+var contador = document.querySelector('#contador');
+var count = 0;
+var jogar = function() {
+    contador++;
+    contador.textContent = contador;
+};
+
+jogar.addEventListener('click', jogar);
+

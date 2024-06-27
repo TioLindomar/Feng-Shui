@@ -47,6 +47,16 @@ body::-webkit-scrollbar-thumb {
     --tertiary-color: #c7a900;
 }
 
+#lua {
+    display: none;
+    transition: 600ms;
+}
+
+#sol {
+    display: inline;
+    transition: 600ms;
+}
+
 /* Menu */
 
 .logo {
@@ -241,13 +251,13 @@ tr:hover {
 .botoes {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .cadastrar {
     font-family: 'MUSASHI', sans-serif;
     font-size: 1.3rem;
     padding: 0.5rem;
-    width: 40%;
     background-color: #dbc12c;
 }
 
@@ -261,7 +271,6 @@ tr:hover {
     font-family: 'MUSASHI', sans-serif;
     font-size: 1.3rem;
     padding: 0.5rem;
-    width: 40%;
     background-color: #DE434B;
 }
 
@@ -282,6 +291,39 @@ tr:hover {
     text-shadow: 1px solid #2c2a1c;
 }
 
+/* JOGAR */ 
+.jogar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: jogar .8s infinite alternate linear;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 30%;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--tertiary-color);
+}
+
+.jogar:hover {
+    cursor: pointer;
+}
+
+@keyframes jogar{
+    from {
+        transform: scale(0.6);
+    }
+    to {
+        transform: scale(0.9);
+    }
+}
+
+.contador {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+}
 
 /* MENSAGEM DE SORTE AO ENTRAR */
 .mensagem {
