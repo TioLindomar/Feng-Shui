@@ -22,6 +22,18 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
 /* Temas */
 .tema-claro {
     --primary-color: #dbc12c;
@@ -106,6 +118,7 @@ main {
     margin-left: 1rem;
     color: var(--primary-color);
     font-size: 2rem;
+    transition: 600ms;
 }
 
 .link-menu svg {
@@ -123,7 +136,7 @@ main {
     transition: 600ms;
 }
 
-/* Home */
+/* HOME */
 h1 {
     font-size: 3rem;
 }
@@ -147,7 +160,7 @@ table{
     margin: 0 auto;
     display: table;
     justify-content: center;
-    width: 80%;
+    max-width: 80%;
     border-collapse: collapse;
     border: 2px solid var(--tertiary-color);
 }
@@ -156,7 +169,7 @@ th {
     padding-right: 2rem;
     padding-left: 2rem;
     font-size: 3rem;
-    width: 16%;
+    max-width: 16%;
     border: 3px solid var(--tertiary-color);
 }
 
@@ -181,8 +194,80 @@ tr:hover {
 }
 
 .botao-dragao {
+    background-color: var(--secondary-color);
     border: 3px solid var(--tertiary-color);
     border-radius: 30%;
+}
+
+.botao-dragao:hover {
+    background-color: var(--tertiary-color);
+    transition:600ms;
+}
+
+/* LOGIN */
+.formulario {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    flex-direction: column;
+    padding: 2rem;
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.formulario label {
+    flex-direction: row;
+    text-align: center;
+}
+
+.formulario input {
+    height: 2rem;
+    width: 95%;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    margin: 0 auto;
+}
+
+
+/* MENSAGEM DE SORTE AO ENTRAR */
+.mensagem {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 50;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilita a rolagem se necessário */
+    background-color: rgba(0,0,0,0.4); /* Fundo preto com opacidade */
+}
+
+
+.conteudo-mensagem {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o modal vertical e horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Limita a largura máxima do modal */
+    text-align: center;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* -------------MEDIA QUERY-------- */
@@ -195,8 +280,17 @@ tr:hover {
         height: 5rem;
     }
 
-    .logo {
+    .texto-logo {
         display: none;
+    }
+
+    .logo {
+        max-height: 5rem;
+        margin-bottom: 0;
+    }
+
+    .logo svg {
+        transform: rotate(270deg);
     }
 
     .navegacao-menu {
@@ -211,6 +305,7 @@ tr:hover {
         margin: 0;
         margin-bottom: 5rem;
     }
+
 
 }
 

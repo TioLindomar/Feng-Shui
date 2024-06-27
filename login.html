@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feng Shui</title>
+    <title>Entrar</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="icon" href="css/elementos/logo.png">
 
@@ -33,7 +33,7 @@
                 <li class="item-menu">
                     <a href="login.html" class="link-menu">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: #ffd700;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
-                        <span class="texto-link">Entrar</span>
+                        <span class="texto-link">Cadastro</span>
                     </a>
                 </li>
 
@@ -68,10 +68,35 @@
             Feng Shui
         </div>
 
-        <p style="text-align: center; font-size: 3rem;">
-            LOGIN
-        </p>
-            
+        <div>
+            <p style="text-align: center; font-size: 3rem;">
+                CADASTRO DE GANHADOR
+            </p>
+            <form id="cadastroForm" class="formulario">
+                <label for="nomeCompleto">NOME COMPLETO:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required><br>
+        
+                <label for="telefone">Nº DE TELEFONE:</label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+        
+                <label for="email">E-MAIL:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="dataNascimento">DATA DE NASCIMENTO:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+        
+                <label for="nomeUsuario">NOME DE USUÁRIO:</label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario" required><br>
+        
+                <label for="senha">SENHA:</label>
+                <input type="password" id="senha" name="senha" required><br>
+        
+                <button type="button" id="cadastrarBtn">CADASTRAR</button>
+                <button type="button" id="cancelarBtn">CANCELAR</button>
+            </form>
+        </div>
+        
+        
         
     
 
