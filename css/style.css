@@ -71,10 +71,6 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--tertiary-color);
 }
 
-.logo svg {
-    transform: rotate(90deg);
-    transition: 500ms;
-}
 
 .menu:hover .logo svg {
     transform: rotate(-90deg);
@@ -288,7 +284,13 @@ tr:hover {
     padding: 1rem;
     color: #dbc12c;
     border: 2px solid #dbc12c;
-    text-shadow: 1px solid #2c2a1c;
+    text-shadow: 2px 2px solid black;
+    font-size: 1rem;
+    text-wrap: wrap;
+}
+
+#resultado h1 {
+    text-align: center;
 }
 
 /* JOGAR */ 
@@ -309,6 +311,8 @@ tr:hover {
 .jogar:hover {
     cursor: pointer;
 }
+
+
 
 @keyframes jogar{
     from {
@@ -446,5 +450,10 @@ tr:hover {
 
     .menu:hover .texto-logo {
         left: 0;
+    }
+
+    .logo svg {
+        transform: rotate(90deg);
+        transition: 500ms;
     }
 }

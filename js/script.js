@@ -53,7 +53,7 @@ window.addEventListener('load', function() {
             const senha = document.getElementById('senha').value;
 
             resultadoDiv.innerHTML = `
-                <p><strong>Dados Cadastrados:</strong></p>
+                <h1><strong>Dados Cadastrados:</strong></h1>
                 <p><strong>Nome Completo:</strong> ${nomeCompleto}</p>
                 <p><strong>Telefone:</strong> ${telefone}</p>
                 <p><strong>Email:</strong> ${email}</p>
